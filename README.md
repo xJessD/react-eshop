@@ -3,7 +3,7 @@
 
 
 
-(Project Page)[https://github.com/nology-tech/new-zealand-consultancy/tree/main/projects/eShop]
+[Project Page](https://github.com/nology-tech/new-zealand-consultancy/tree/main/projects/eShop)
 ## Outline
 
 This project is designed to reinforce your React learnings and make sure that you are comfortable with most aspect of the framework.
@@ -20,6 +20,7 @@ At a minimum your e-shop website should have two pages:
 -   Home Page
     -   This will contain:
         -   A Grid of products
+
         ✅   Carousel of featured products 
         -   Product Page (with id parameter) Similar to a product page on another site, allows you to add to cart and select product variants
 -   All products should be stored in Firestore:
@@ -53,6 +54,6 @@ Using Firestore and react create, a cart system. Create a cart page in your reac
 
 
 ## Resources 
-- [Image] (https://unsplash.com/photos/ivP3TYdLvw0)
+- [Background Image](https://unsplash.com/photos/ivP3TYdLvw0)
 - Coffee Bean SVG? 
 - [React Slider Tutorial](https://www.youtube.com/watch?v=SK9AlIbexOE)
