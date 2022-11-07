@@ -1,5 +1,17 @@
-@use '../../assets/scss/mixins';
+@use '../../assets/scss/mixins.scss';
+@use '../../assets/scss/variables.scss';
+@use '../../assets/scss/palette.scss';
 
 .Header {
-  @include mixins.flex-box($justify: space-between);
+  @include mixins.flex-box();
+  width: 100%;
+  //background-color: rgba(palette.$ivory, .8);
+  padding: 20px 0;
+  margin-bottom: 50px;
+  
+
+  &__content {
+    @include mixins.flex-box($justify: space-between);
+    width: variables.$max-content-width;
+  }
 }

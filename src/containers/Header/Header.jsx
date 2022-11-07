@@ -4,8 +4,10 @@ import style from './Header.module.scss';
 const Header = () => {
   return (
     <header className={style.Header}>
-      <Title />
-      <Nav />
+      <div className={style.Header__content}>
+        <Title />
+        <Nav />
+      </div>      
     </header>
   );
 };

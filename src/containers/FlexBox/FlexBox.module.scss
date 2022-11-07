@@ -1,0 +1,7 @@
+@use '../../assets/scss/mixins.scss';
+
+.FlexBox {
+  @include mixins.flex-box();
+  width: 80vw;
+  
+}

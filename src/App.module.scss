@@ -1,5 +1,7 @@
 @use '../src/assets/scss/mixins.scss';
 
+$body-padding: 50px;
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +17,8 @@ body {
 }
 
 .Container {
-  width: 80%;
-  max-width: 1800px;
+  background-color: rgba(white, .8);
+  width: 100vw;
+  // width: calc(100vw - $body-padding*2);
+  // padding: $body-padding;
 }

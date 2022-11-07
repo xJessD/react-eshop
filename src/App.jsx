@@ -1,11 +1,10 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import style from './App.module.scss';
 import Carousel from './components/Carousel/Carousel';
 import Header from './containers/Header/Header';
-import img1 from './assets/images/bg.jpg';
 
 function App() {
-  const [count, setCount] = useState(0);
 
   const slides = [
     {url: '/bg.jpg', title: 'Title'},
@@ -16,10 +15,18 @@ function App() {
   ]
 
   return (
+    <BrowserRouter>
     <div className={style.Container}>
       <Header />
-      <Carousel slides={slides}/>
+
+      <Routes>
+        <Route path="/" element={
+          <Carousel slides={slides}/>
+        }></Route>
+        <Route path='/porducts'></Route>
+      </Routes>
     </div>
+    </BrowserRouter>
   )
 }
 

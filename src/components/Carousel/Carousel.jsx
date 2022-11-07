@@ -17,19 +17,27 @@ const Carousel = ({slides}) => {
     setCurrentIndex(newIndex);
   }
 
+  const goToSlide = (slideIndex) => {
+    setCurrentIndex(slideIndex);
+  }
+
   return (
     <div className={style.Carousel}>
       <div className={style.Carousel__content}>
+
         <div className={style.Carousel__content_arrLeft} onClick={goToPrevious}>&lsaquo;</div>
         <div className={style.Carousel__content_arrRight} onClick={goToNext}>&rsaquo;</div>
-        <div className={style.slides} 
+
+        <div className={style.Carousel__content_slides} 
         style={{backgroundImage: `url(${slides[currentIndex].url})`}}>
         </div>
-        <div>hellolo
+
+        <div className={style.Carousel__content_nav}>
           {slides.map((slide, slideIndex) => (
-            <div key={slideIndex}>•</div>
+            <div key={slideIndex} onClick={()=> goToSlide(slideIndex)}>•</div>
           ))}
         </div>
+        
       </div>
     </div>
   );
