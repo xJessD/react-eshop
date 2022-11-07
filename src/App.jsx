@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import style from './App.module.scss';
 import Carousel from './components/Carousel/Carousel';
+import CoffeeList from './containers/CoffeeList/CoffeeList';
 import Header from './containers/Header/Header';
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <BrowserRouter>
     <div className={style.Container}>
       <Header />
-
+      <CoffeeList />
       <Routes>
         <Route path="/" element={
           <Carousel slides={slides}/>
