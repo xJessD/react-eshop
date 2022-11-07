@@ -1,0 +1,5 @@
+@use '../../assets/scss/mixins';
+
+.Header {
+  @include mixins.flex-box($justify: space-between);
+}

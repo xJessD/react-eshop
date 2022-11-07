@@ -1,0 +1,11 @@
+@use '../../assets/scss/palette.scss';
+@use '../../assets/scss/mixins.scss';
+
+.Nav {
+  @include mixins.flex-box();
+  list-style: none;
+
+  & li {
+    margin: 15px;
+  }
+}

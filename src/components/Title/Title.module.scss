@@ -1,0 +1,7 @@
+@use '../../assets/scss/palette.scss';
+
+.Title {
+  color: palette.$cafe-au-lait;
+  text-shadow: 2px 2px 2px palette.$ivory;
+  font-size: 70pt;
+}
