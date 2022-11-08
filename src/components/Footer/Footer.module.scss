@@ -1,0 +1,14 @@
+@use '../../assets/scss/palette.scss';
+@use '../../assets/scss/variables.scss';
+@use '../../assets/scss/mixins.scss';
+
+.Footer {
+  @include mixins.flex-box();
+  color: palette.$outer-space-crayola;
+
+  &__content {
+    width: variables.$max-content-width;
+    text-align: center;
+    padding: 15px;
+  }
+}

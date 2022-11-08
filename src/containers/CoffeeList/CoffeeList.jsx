@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { getCoffee } from "../../services/coffee";
+import style from './CoffeeList.module.scss';
+import CoffeeCard from "../../components/CoffeeCard/CoffeeCard";
 
 const CoffeeList = () => {
   const [coffees, setCoffees] = useState([]);
@@ -8,17 +10,13 @@ const CoffeeList = () => {
     getCoffee().then((coffees) => setCoffees(coffees));
   }, []);
 
-  //console.log(coffees[1]);
-
   return (
-    <div>
-      <h2>Hello</h2>
-      {coffees.map((coffees) => (
-        <>
-        <h1>{coffees.name}</h1>
-        <img src={coffees.imageUrl} />
-        </>
+    <div className={style.CoffeeList}>
+      <div className={style.CoffeeList__content}>
+        {coffees.map((coffee) => (
+        <CoffeeCard key={coffee.id} data={coffee}/>
       ))}
+      </div>
     </div>
   );
 };

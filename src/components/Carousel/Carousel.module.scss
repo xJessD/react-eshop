@@ -1,9 +1,11 @@
-@use '../../assets/scss/mixins';
+@use '../../assets/scss/mixins.scss';
+@use '../../assets/scss/palette.scss';
 
 .Carousel {
   margin: 0 auto;
   width: 700px;
   height: 350px;
+  color: palette.$dark-slate-gray;
 
   &__content {
     height: 100%;
@@ -14,7 +16,6 @@
       top: 50%;
       transform: translate(0, -50%);
       font-size: 60pt;
-      color: white;
       z-index: 1;
     }
 
