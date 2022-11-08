@@ -14,3 +14,13 @@ export const getCoffee = async () => {
 
   return cleanedData;
 };
+
+export const getCoffeeByID = async (id) => {
+  console.log(id);
+
+  const docRef = doc(db, 'coffee', id);
+
+  const querySnapshot = await getDoc(docRef);
+
+  return { id: querySnapshot.id, ...querySnapshot.data() };
+}

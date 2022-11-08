@@ -1,0 +1,23 @@
+@use '../../assets/scss/palette.scss';
+
+.CoffeeCard {
+  width: 20%;
+  border-top: 5px solid palette.$dark-slate-gray;
+  border-bottom: 5px solid palette.$dark-slate-gray;
+  margin-bottom: 30px;
+  color: palette.$outer-space-crayola;
+
+  & a {
+    all: unset;
+
+  }
+  & img {
+    width: 100%;
+  }
+
+  & h3 {
+    font-size: 18pt;
+    color: palette.$outer-space-crayola;
+    text-decoration: none;
+  }
+}

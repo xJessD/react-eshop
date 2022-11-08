@@ -1,0 +1,13 @@
+@use '../../assets/scss/mixins.scss';
+@use '../../assets/scss/variables.scss';
+
+.CoffeeList {
+  @include mixins.flex-box();
+  width: 100%;
+  margin: 50px auto;
+
+  &__content {
+    @include mixins.flex-box(row, space-between, flex-start, wrap);
+    width: variables.$max-content-width;
+  }
+}
