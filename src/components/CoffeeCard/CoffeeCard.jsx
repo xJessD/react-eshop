@@ -6,8 +6,13 @@ const CoffeeCard = ({data}) => {
     <div className={style.CoffeeCard}>
       <NavLink to={`products/${data.id}`}>
         <img src={data.imageUrl} />
-        <h3>{data.name}</h3>  
-        <p>From ${data.variant[0].price}</p>  
+        <div className={style.CoffeeCard__content}>
+          <h3>{data.name}</h3>  
+          <h4> {data.roasters}</h4>
+          <p>From ${data.variant[0].price}</p>  
+        </div>
+        
+        
       </NavLink>  
     </div>
   )

@@ -1,7 +1,9 @@
 @use '../../assets/scss/palette.scss';
+@use '../../assets/scss/variables';
 
 .Title {
+  font-family: 'BakeryRoast';
   color: palette.$cafe-au-lait;
   text-shadow: 2px 2px 2px palette.$ivory;
-  font-size: 70pt;
+  font-size: 50pt;
 }

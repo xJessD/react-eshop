@@ -6,8 +6,11 @@ const Nav = () => {
     <nav>
         <ul className={style.Nav}>
           <li><NavLink to='/'>Home</NavLink></li>
-          <li><NavLink to="/Products">Product</NavLink></li>
+          <li><NavLink to="/products">Product</NavLink></li>
+          <li><NavLink to="/cart">Cart</NavLink></li>
         </ul>
+
+        
       </nav>
   )
 }

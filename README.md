@@ -22,9 +22,9 @@ At a minimum your e-shop website should have two pages:
         ✅   A Grid of products
 
         ✅   Carousel of featured products 
-        -   Product Page (with id parameter) Similar to a product page on another site, allows you to add to cart and select product variants
--   All products should be stored in Firestore:
-    -   You should store the following information:
+        ✅   Product Page (with id parameter) Similar to a product page on another site, allows you to add to cart and select product variants
+✅   All products should be stored in Firestore:
+    ✅   You should store the following information:
         ✅   quantity
 
         ✅   variants (could be colors, sizes, etc)
@@ -64,3 +64,8 @@ Using Firestore and react create, a cart system. Create a cart page in your reac
 - [Background Image](https://unsplash.com/photos/ivP3TYdLvw0)
 - Coffee Bean SVG? 
 - [React Slider Tutorial](https://www.youtube.com/watch?v=SK9AlIbexOE)
+- [Coffee Icon](https://www.flaticon.com/free-icon/coffee-beans_3219300?term=coffee&page=1&position=13&page=1&position=13&related_id=3219300)
+
+
+
+

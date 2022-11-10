@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className={style.Footer}>
       <div className={style.Footer__content}>
-      Created by Jess☕
+      Created by <a href="https://github.com/xJessD">Jess</a> ☕
       </div>
       
     </div>

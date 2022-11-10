@@ -5,9 +5,12 @@
 .Footer {
   @include mixins.flex-box();
   color: palette.$outer-space-crayola;
+  width: 100%;
 
   &__content {
     width: variables.$max-content-width;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-align: center;
     padding: 15px;
   }
