@@ -16,7 +16,6 @@ export const getCoffee = async () => {
 };
 
 export const getCoffeeByID = async (id) => {
-  console.log(id);
 
   const docRef = doc(db, 'coffee', id);
 

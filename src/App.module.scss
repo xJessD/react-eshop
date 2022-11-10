@@ -1,4 +1,7 @@
 @use '../src/assets/scss/mixins.scss';
+@use '../src/assets/scss/palette.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100;1,300&display=swap');
 
 $body-padding: 50px;
 
@@ -7,18 +10,26 @@ $body-padding: 50px;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   @include mixins.flex-box();
-  min-width: 320px;
+  font-family: 'Roboto', sans-serif;;
+  min-width: 450px;
   min-height: 100vh;
   font-size: 16pt;
-  background: fixed center url('./assets/images/bg.jpg');
+  //background: fixed center url('./assets/images/bg.jpg');
+  background-color: palette.$grullo;
   background-size: cover;
 }
 
 .Container {
-  background-color: rgba(white, .8);
+  @include mixins.flex-box($align: flex-start, $wrap: wrap);
+  background-color: rgba(white, .80);
   width: 100vw;
+  min-height: 100vh;
   // width: calc(100vw - $body-padding*2);
   // padding: $body-padding;
 }

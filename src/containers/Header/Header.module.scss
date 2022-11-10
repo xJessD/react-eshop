@@ -5,9 +5,12 @@
 .Header {
   @include mixins.flex-box();
   width: 100%;
-  //background-color: rgba(palette.$ivory, .8);
-  padding: 20px 0;
-  margin-bottom: 50px;
+  background-color: white;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 10px #DDD;
+  z-index: 50;
   
 
   &__content {

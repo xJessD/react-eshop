@@ -1,23 +1,48 @@
 @use '../../assets/scss/palette.scss';
 
+$scale-transition: transform .4s ease-in-out;
+
 .CoffeeCard {
   width: 20%;
   border-top: 5px solid palette.$dark-slate-gray;
   border-bottom: 5px solid palette.$dark-slate-gray;
   margin-bottom: 30px;
   color: palette.$outer-space-crayola;
+  aspect-ratio: 2 / 3;
+  transition: $scale-transition;
 
-  & a {
-    all: unset;
-
+  &:hover {
+    transform: scale(1.05);
+    transition: $scale-transition;
   }
+
   & img {
     width: 100%;
+    margin-bottom: 5px;
   }
 
-  & h3 {
-    font-size: 18pt;
-    color: palette.$outer-space-crayola;
-    text-decoration: none;
+  &__content {
+    & h3 {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 19pt;
+      color: palette.$outer-space-crayola;
+      text-decoration: none;
+      margin-bottom: 5px;
+    }
+
+    & h4 {
+      font-size: 20px;
+      color: palette.$cafe-au-lait;
+      font-weight: normal; 
+      font-style: italic;
+      letter-spacing: 1px;
+      margin-bottom: 5px;
+    }
+
+    & p {
+      color: black;
+    }
   }
+  
 }
