@@ -59,7 +59,8 @@ Using Firestore and react create, a cart system. Create a cart page in your reac
 - Being able to favourite or remove favourite item.
 - Displaying a favourites page.
 - Add resposiveness. 
-
+- Add variants to cart.
+- Add increase / decrease qty functions based on individual variants. 
 
 
 ## Resources 
