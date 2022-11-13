@@ -35,10 +35,9 @@ export const increaseQty = async (coffee) => {
   const docRef = doc(db, 'cart', id);
   const querySnapshot = await getDoc(docRef);
 
-  
 
   if (!querySnapshot.exists()) {
-    const newCoffee = {name, qty: 1}; 
+    const newCoffee = {name, qty: 1, imageUrl}; 
     const response = await setDoc(docRef, newCoffee);
   } else {
     await updateDoc(docRef, {
@@ -55,8 +54,7 @@ export const increaseQty = async (coffee) => {
  * Checks if item exists in cart, then decrements or deletes item. 
  */
 export const decreaseQty = async (coffee) => {
-  const {id, name, imageUrl, variant} = coffee;
-  const collectionRef = collection(db, 'cart');
+  const {id} = coffee;
 
   const docRef = doc(db, 'cart', id);
   const querySnapshot = await getDoc(docRef);
@@ -83,4 +81,18 @@ export const deleteFromCart = async (coffee) => {
   if (querySnapshot.exists()) {
     await deleteDoc(doc(db, "cart", id));
   }
+
+  getCart();
+}
+
+export const clearCart = async () => {
+  const querySnapshot = await getDocs(collection(db, "cart"));
+  console.log(querySnapshot.docs);
+
+  // if (querySnapshot.exists()) {
+  //   querySnapshot.forEach((doc) => {
+  //     console.log(doc);
+  //     //const reponse = deleteDoc(doc(db, "cart", doc));
+  //   });
+// }
 }

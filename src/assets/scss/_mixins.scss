@@ -4,3 +4,12 @@
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin globalBtn {
+  background-color: #F1F1F1;
+  border-radius: 5px;
+  border: none;
+  padding: 7px;  
+  font-size: 13pt;
+  margin-right: 5px;
+}

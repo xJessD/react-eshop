@@ -1,24 +1,26 @@
 import style from './Carousel.module.scss';
+import './Slide.module.scss';
 import { useState } from 'react';
 
 const Carousel = ({slides}) => {
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  }
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
 
   const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
+    setCurrent(current === length - 1 ? 0 : current + 1);
   }
 
+  const goToPrevious = () => {
+    setCurrent( current === 0 ? length - 1 : current - 1);
+  }
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
+
   const goToSlide = (slideIndex) => {
-    setCurrentIndex(slideIndex);
+    setCurrent(slideIndex);
   }
 
   return (
@@ -28,17 +30,28 @@ const Carousel = ({slides}) => {
         <div className={style.Carousel__content_arrLeft} onClick={goToPrevious}>&lsaquo;</div>
         <div className={style.Carousel__content_arrRight} onClick={goToNext}>&rsaquo;</div>
 
-        <div className={style.Carousel__content_slides} 
-        style={{backgroundImage: `url(${slides[currentIndex].url})`}}>
-        </div>
-
         <div className={style.Carousel__content_nav}>
           {slides.map((slide, slideIndex) => (
             <div key={slideIndex} onClick={()=> goToSlide(slideIndex)}>•</div>
           ))}
         </div>
+
+      {
+        slides.map((slide, index) => {
+          return (
+            <div className={index === current ? 'slide active': 'slide' } key={index}>
+              {index === current && (
+                <img src={slide.url} className={style.cImg}></img>
+              )}
+            </div>
+            
+          );
+        })
+      }
         
       </div>
+
+
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const CoffeeCard = ({data}) => {
   return (
     <div className={style.CoffeeCard}>
-      <NavLink to={`products/${data.id}`}>
+      <NavLink to={`${data.id}`}>
         <img src={data.imageUrl} />
         <div className={style.CoffeeCard__content}>
           <h3>{data.name}</h3>  

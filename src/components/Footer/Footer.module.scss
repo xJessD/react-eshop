@@ -6,6 +6,7 @@
   @include mixins.flex-box();
   color: palette.$outer-space-crayola;
   width: 100%;
+  margin-top: 50px;
 
   &__content {
     width: variables.$max-content-width;

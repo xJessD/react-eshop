@@ -12,44 +12,47 @@ $marginb-20: 20px;
   height: 100%;
 
   &__content {
-    @include mixins.flex-box($justify: center);
+    @include mixins.flex-box(row, center, flex-start, wrap);
     width: variables.$max-content-width;
 
     & img {
-      width: 40%;
       box-shadow: $box-shadow;
       aspect-ratio: 1 / 1 ;
+      min-width: 350px;
+      width: 50%;
     }
 
     &_info {
-      @include mixins.flex-box();
+      @include mixins.flex-box($wrap: wrap);
       background-color: white;
       box-shadow: $box-shadow;
-      width: 40%;
-      aspect-ratio: 1 / 1;
+      width: 50%;
+      aspect-ratio: 1/1;
+      min-width: 350px;
 
       & .contentInner {
         margin: 40px;
 
         & h2 {
-          font-family: 'BakeryRoast';
-          font-size: 40pt;
+          font-family: 'Times New Roman', Times, serif;
+          font-size: 30pt;
           color: palette.$cafe-au-lait;
         }
 
         & h4 {
-          font-size: 25pt;
+          font-size: 20pt;
           font-weight: normal;
           margin-bottom: $marginb-20;
+        }
+
+        &__desc {
+          margin-top: 20px;
         }
       }
     }
   }
 }
 
-.soldOut {
-
-}
 
 .select {
   font-size: 15pt;
@@ -62,6 +65,12 @@ $marginb-20: 20px;
 }
 
 .btn {
-  padding: 10px;
-  font-size: 15pt;
+  @include mixins.globalBtn;
+  }
+
+.fav {
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: red;
 }
