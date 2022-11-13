@@ -1,6 +1,6 @@
 # React e-cShop Website
 ## Preview
-![Screenshot](/assets/images/Screenshot_127.png?raw=true "Site Preview")
+![Screenshot](/src/assets/images/Screenshot_127.png?raw=true "Site Preview")
 
 
 ## Outline
