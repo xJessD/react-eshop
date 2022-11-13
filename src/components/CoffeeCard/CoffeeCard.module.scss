@@ -1,12 +1,16 @@
 @use '../../assets/scss/palette.scss';
+@use '../../assets/scss/variables.scss';
 
 $scale-transition: transform .4s ease-in-out;
+$card-border: 5px solid palette.$dark-slate-gray;
 
 .CoffeeCard {
   width: 20%;
-  border-top: 5px solid palette.$dark-slate-gray;
-  border-bottom: 5px solid palette.$dark-slate-gray;
-  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: variables.$box-shadow;
+  // border-top: $card-border;
+  // border-bottom: $card-border;
+  margin: 0 20px 40px 0;
   color: palette.$outer-space-crayola;
   aspect-ratio: 2 / 3;
   transition: $scale-transition;
@@ -22,6 +26,8 @@ $scale-transition: transform .4s ease-in-out;
   }
 
   &__content {
+    padding: 7px;
+
     & h3 {
       font-family: 'Roboto', sans-serif;
       font-weight: 700;
@@ -29,6 +35,7 @@ $scale-transition: transform .4s ease-in-out;
       color: palette.$outer-space-crayola;
       text-decoration: none;
       margin-bottom: 5px;
+      
     }
 
     & h4 {

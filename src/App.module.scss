@@ -12,6 +12,7 @@ $body-padding: 50px;
 
 a {
   text-decoration: none;
+  color: palette.$cafe-au-lait;
 }
 
 body {
@@ -30,6 +31,9 @@ body {
   background-color: rgba(white, .80);
   width: 100vw;
   min-height: 100vh;
-  // width: calc(100vw - $body-padding*2);
-  // padding: $body-padding;
+}
+
+.btn {
+  padding: 10px;
+  font-size: 15pt;
 }

@@ -54,8 +54,11 @@ const CoffeePage = ({}) => {
 
             
                   <button className={style.btn} onClick={() => increaseQty(coffee)}>Add to Cart</button>
+                  { coffee.favourited ? <span className={style.fav}>	&hearts; Favourited Item</span> : null}
 
-                  <button className={style.btn} onClick={() => decreaseQty(coffee)}>Decrease</button>
+                  {/* <button className={style.btn} onClick={() => decreaseQty(coffee)}>Decrease</button> */}
+
+                  <p className={style.contentInner__desc}>{coffee.desc}</p>
                 </>
                   }
               </div>          

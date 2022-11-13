@@ -1,0 +1,45 @@
+@use '../../assets/scss/mixins';
+@use '../../assets/scss/variables';
+@use '../../assets/scss/palette';
+
+.CartItems {
+  background-color: white;
+  width: 60%;
+  //max-width: 800px;
+  margin-bottom: 50px;
+  box-shadow: variables.$box-shadow;
+
+  &__content {
+    @include mixins.flex-box($justify: space-between);
+
+    & img {
+      width: 40%;
+    }
+
+    & .content__info {
+      width: 50%;
+      margin-right: 3%;
+
+      & h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 23pt;
+        color: palette.$cafe-au-lait;
+      }
+
+      &__qty {
+        font-size: 15pt;
+        padding: 5px;
+        margin: 10px 0;
+
+        &_text {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+}
+
+.btn {
+  @include mixins.globalBtn;
+}

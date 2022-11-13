@@ -1,0 +1,10 @@
+@use '../../assets/scss/mixins';
+
+.Cart {
+  @include mixins.flex-box($direction: column);
+  margin-top: 50px;
+}
+
+.btn {
+  @include mixins.globalBtn;
+}

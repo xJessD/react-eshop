@@ -1,10 +1,11 @@
 # React e-cShop Website
+## Preview
+![Screenshot](/assets/images/Screenshot_127.png?raw=true "Site Preview")
 
 
-
+## Outline
 
 [Project Page](https://github.com/nology-tech/new-zealand-consultancy/tree/main/projects/eShop)
-## Outline
 
 This project is designed to reinforce your React learnings and make sure that you are comfortable with most aspect of the framework.
 With this project you will practice how to:
@@ -37,7 +38,7 @@ At a minimum your e-shop website should have two pages:
 
         ✅   favourited or not (boolean)
 
-            All data should be stored in Firestore and fetched by the frontend, there should be NO static product data in the react application
+        ✅  All data should be stored in Firestore and fetched by the frontend, there should be NO static product data in the react application
 
 ### Bonus
 
@@ -45,25 +46,27 @@ Using Firestore and react create, a cart system. Create a cart page in your reac
 
 -   List of products in cart
 
-    -   Ability to change quantity of products in cart
-    -   Ability to remove items from cart
+    ✅   Ability to change quantity of products in cart
+    ✅   Ability to remove items from cart
 
 -   TIPS :
 
 1. Make sure your site is scoped to one category of products
 
-## Useful links
+## Would like to add / fix
+- Fix up loading times. 
+- Currently have not finished a remove whole cart
+- Being able to favourite or remove favourite item.
+- Displaying a favourites page.
+- Add resposiveness. 
 
--   [React-router-dom](https://reactrouter.com/docs/en/v6/getting-started/overview)
--   [Dummy JSON](https://dummyjson.com/)
--   [Fake Store](https://fakestoreapi.com/)
 
 
 ## Resources 
 - [Paradox](https://paradoxroasters.com/)
 - [Background Image](https://unsplash.com/photos/ivP3TYdLvw0)
-- Coffee Bean SVG? 
 - [React Slider Tutorial](https://www.youtube.com/watch?v=SK9AlIbexOE)
+- [Another React Slider Tutorial](https://www.youtube.com/watch?v=l1MYfu5YWHc)
 - [Coffee Icon](https://www.flaticon.com/free-icon/coffee-beans_3219300?term=coffee&page=1&position=13&page=1&position=13&related_id=3219300)
 
 
