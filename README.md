@@ -1,4 +1,4 @@
-# React e-cShop Website
+# React e-Shop Website
 ## Preview
 ![Screenshot](/src/assets/images/Screenshot_127.png?raw=true "Site Preview")
 
